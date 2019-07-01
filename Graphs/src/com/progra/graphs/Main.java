@@ -15,10 +15,10 @@ public class Main {
 		// Ciudades c = new Ciudades("./distancia");
 		// c.resolverCamino("SanPedro", "SantaFe");
 
-		// new Vecinos("./vecinos");
+		new Vecinos("./vecinos");
 
-		Reserva r = new Reserva("./reserva");
-		r.DFS(0);
+		// Reserva r = new Reserva("./reserva");
+		// r.DFS(0);
 	}
 
 }
