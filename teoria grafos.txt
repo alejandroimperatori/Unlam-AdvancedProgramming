@@ -1,0 +1,27 @@
+Algoritmos de Grafos
+    - Dijkstra
+    - DFS: poco conexo O(n+m), completamente conexo O(n^2). Sirve para saber todos los nodos que son accesibles desde un nodo
+    - BFS: poco conexo O(n+m), completamente conexo O(n^2)
+    - Prim: arbol abarcador de costo minimo, no admite ciclos. Su salida es el costo de dicho arbol
+    - Kruskal: arbol abarcador de costo minimo, no admite ciclos. Se ordenan las aristas de funcion del costo y se procesan las mismas hasta que se alcanza la cantidad de aristas igual a cantidad de nodos -1. Utiliza Union-Find para descartar las aristas que cerrarian ciclos. Su salida es el costo de dicho arbol
+    - Floyd - Warshall: encontrar el camino mínimo en grafos dirigidos ponderados
+    - Coloreo
+        - Número cromático (menor cantidad de colores para colorear el grafo)
+Teoría de Grafos: nodos conectados por aristas
+    - Ponderado: cada arista tiene un peso
+	- No Ponderado: las arista no tienen peso
+    - Conexo (no hay vertices aislados)
+    - Regular (todos los vertices con mismo grado)
+    - Completo (todos se conectan con todos)
+    - Bipartitos: sus vértices se pueden separar en dos conjuntos disjuntos (se puede colorear con dos colores)
+	- N-partitos: sus vértices se pueden separar en n conjuntos disjuntos (se puede colorear con n colores)
+    - Arbol (sin ciclos y que conecta todos los nodos): todos los arboles son bipartitos
+    - Camino: sucesion de nodos conectados por aristas
+        - Camino Euleriano: es un camino  que contiene todas las aristas, apareciendo cada una de ellas exactamente una vez
+        - Camino de Hamilton: sucesión de aristas adyacentes que visita todos los vértices del grafo una sola vez
+    - Ciclo o Circuito: camino que empieza y termina en el mismo nodo|
+        - Ciclo Euleriano: es un camino cerrado que recorre cada arista exactamente una vez.
+        - Ciclo de Hamilton camino de hamilton, en que el ultimo vertice es adyacente al primero
+    - Matriz de Adyasencia: matriz cuadrada que se utiliza como una forma de representar relaciones binarias, conecta nodos adyacentes, es simetrica
+    - Matriz de Incidencia: conecta nodos con aristas
+	- Lista de aristas / lista de adyacencia: para cada vertice se almacena una lista que contiene los vertices adyacentes al mismo
